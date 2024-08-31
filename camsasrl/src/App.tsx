@@ -1,11 +1,15 @@
+import { Suspense } from 'react';
+import AppRouter from './routes/AppRouter';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './App.css'
 
 function App() {
 
   return (
-    <>
-      <h1>Testing 1</h1>
-    </>
+    <Suspense>
+      <AppRouter/>
+    </Suspense>
   )
 }
 
