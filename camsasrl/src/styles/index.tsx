@@ -1,0 +1,2 @@
+import './layouts/index';
+import './pages/index';
