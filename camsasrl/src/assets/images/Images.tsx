@@ -1,0 +1,1 @@
+export const logoNav = 'https://res.cloudinary.com/dyh8yawnl/image/upload/v1726035903/Logo1_1_xlzue9.png'
