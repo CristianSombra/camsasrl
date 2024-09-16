@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { AnimateProps, ButtonSeeMore } from "../../components";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUserFriends, faStethoscope, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 import "../../styles";
 
 const Home: React.FC <AnimateProps>= ({animate}) => {
@@ -19,7 +21,7 @@ const Home: React.FC <AnimateProps>= ({animate}) => {
                     <h1 className="custom-title">Cuidando la vida</h1>
                     <h2 className="custom-subtitle">Liderando el camino</h2>
                     <h2 className="custom-subtitle">hacia la salud</h2>
-                    <button className="button-primary">
+                    <button className="button-title">
                         Contáctanos
                     </button>
                 </div>
@@ -29,17 +31,17 @@ const Home: React.FC <AnimateProps>= ({animate}) => {
             <div className="row buttons-row d-fex justify-content-center text-center align-items-end">
                 <div className="col-2">
                     <button className="button-thirdy">
-                            Contáctanos
+                        <FontAwesomeIcon icon={faUserFriends} /> Nosotros
                     </button>
                 </div>
                 <div className="col-2">
                     <button className="button-primary">
-                            Contáctanos
+                        <FontAwesomeIcon icon={faStethoscope} /> Servicios
                     </button>
                 </div>
                 <div className="col-2">
                     <button className="button-secondary">
-                            Contáctanos
+                        <FontAwesomeIcon icon={faPhoneAlt} /> Contácto
                     </button>
                 </div>
                 <div className="row my-5 d-flex justify-content-center">
