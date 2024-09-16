@@ -1,6 +1,6 @@
 .home-container {
     margin-top: 100px;
-    background-image: url('https://res.cloudinary.com/dyh8yawnl/image/upload/v1726453067/ejemplo_1_miynsf_jcivuc.webp');
+    background-image: url('https://res.cloudinary.com/dyh8yawnl/image/upload/v1726467626/home_s5rux6.webp');
     background-size: cover;
     height: 100vh;
 }
@@ -10,4 +10,18 @@
     bottom: 0px;
     left: 0;
     right: 0;
+}
+
+.home-container .custom-title {
+    font-size: 18px;
+    color: #00A2E2;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.home-container .custom-subtitle {
+    font-size: 64px;
+    color: #2F4F5E;
+    font-weight: bold;
+    margin-top: -15px;
 }
