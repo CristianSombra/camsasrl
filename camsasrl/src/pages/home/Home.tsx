@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { AnimateProps } from "../../components";
+import { AnimateProps, ButtonSeeMore } from "../../components";
 import "../../styles";
 
 const Home: React.FC <AnimateProps>= ({animate}) => {
@@ -26,7 +26,7 @@ const Home: React.FC <AnimateProps>= ({animate}) => {
             </div>
 
             {/* Buttons */}
-            <div className="row d-fex justify-content-center text-center">
+            <div className="row buttons-row d-fex justify-content-center text-center align-items-end">
                 <div className="col-2">
                     <button className="btn btn-success">
                             Contáctanos
@@ -41,8 +41,13 @@ const Home: React.FC <AnimateProps>= ({animate}) => {
                     <button className="btn btn-success">
                             Contáctanos
                     </button>
+                </div>
+                <div className="row my-5 d-flex justify-content-center">
+                    <ButtonSeeMore/>
                 </div>
             </div>
+
+            
 
         </motion.section>
     )
