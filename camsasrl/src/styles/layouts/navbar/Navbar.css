@@ -30,7 +30,7 @@
 }
 
 .custom-menu-button > div {
-    background: blue;
+    background: #00415D;
     display: block;
     width: 100%;
     height: 0.4rem;
@@ -52,7 +52,7 @@
 }
 
 .custom-menu-button.open > div {
-    background-color: black;
+    background-color: #003346;
 }
 
 @media (max-width: 991.98px) {
