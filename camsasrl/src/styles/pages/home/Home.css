@@ -4,3 +4,10 @@
     background-size: cover;
     height: 100vh;
 }
+
+.home-container .buttons-row {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+}
