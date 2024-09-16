@@ -12,15 +12,38 @@ const Home: React.FC <AnimateProps>= ({animate}) => {
             className="home-container"
             id="Home"
             >
-                
-            <div className="row">
-                <div className="col">
-                    <h1>Home</h1>
+
+            {/* Title */}    
+            <div className="row d-flex justify-content-center">
+                <div className="col-10">
+                    <h1>Cuidando la vida</h1>
+                    <h2>Liderando el camino</h2>
+                    <h2>hacia la salud</h2>
+                    <button className="btn btn-warning">
+                        Contáctanos
+                    </button>
                 </div>
             </div>
 
-        
-        
+            {/* Buttons */}
+            <div className="row d-fex justify-content-center text-center">
+                <div className="col-2">
+                    <button className="btn btn-success">
+                            Contáctanos
+                    </button>
+                </div>
+                <div className="col-2">
+                    <button className="btn btn-success">
+                            Contáctanos
+                    </button>
+                </div>
+                <div className="col-2">
+                    <button className="btn btn-success">
+                            Contáctanos
+                    </button>
+                </div>
+            </div>
+
         </motion.section>
     )
 }
