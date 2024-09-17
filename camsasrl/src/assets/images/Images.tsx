@@ -1,1 +1,2 @@
-export const logoNav = 'https://res.cloudinary.com/dyh8yawnl/image/upload/v1726035903/Logo1_1_xlzue9.png'
+export const logoNav = 'https://res.cloudinary.com/dyh8yawnl/image/upload/v1726035903/Logo1_1_xlzue9.png';
+export const imageHome = 'https://res.cloudinary.com/dyh8yawnl/image/upload/v1726525518/Home_nfkll8.webp';
