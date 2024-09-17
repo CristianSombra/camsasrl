@@ -38,7 +38,7 @@ const Navbar: React.FC = React.memo(() => {
             animate={{opacity: 1}}
             transition={{duration: 0.7, delay: 1.2}}
             className={`navbar navbar-expand-lg ${isDesktop && !isMenuOpen ? 'fixed-top fixed-top-desktop bg-white' : ''}`}>
-                <div className="container">
+                <div className="container-fluid">
                 <a href="#Home" className="navbar-brand">
                     <img src={logoNav} alt="Logo" className="logo-img" />
                 </a>
