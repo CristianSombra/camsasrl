@@ -1,5 +1,6 @@
 import React, { Suspense } from "react";
 import { useInView } from "react-intersection-observer";
+import { SpinnerLoader } from "../components";
 import { Navbar } from "../layouts";
 import { Home, Services, About, Contact } from "../pages";
 
@@ -14,22 +15,22 @@ const AppRouter: React.FC = () => {
         <>
             <Navbar/>
             <div ref={homeRef}>
-                <Suspense>
+                <Suspense fallback={<SpinnerLoader/>}>
                     <Home animate={homeInView}/>
                 </Suspense>
             </div>
             <div ref={servicesRef}>
-                <Suspense>
+                <Suspense fallback={<SpinnerLoader/>}>
                     <Services animate={servicesInView}/>
                 </Suspense>
             </div>
             <div ref={aboutRef}>
-                <Suspense>
+                <Suspense fallback={<SpinnerLoader/>}>
                     <About animate={aboutInView}/>
                 </Suspense>
             </div>
             <div ref={contactRef}>
-                <Suspense>
+                <Suspense fallback={<SpinnerLoader/>}>
                     <Contact animate={contactInView}/>
                 </Suspense>
             </div>
