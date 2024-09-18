@@ -11,7 +11,7 @@ const Home: React.FC <AnimateProps>= ({animate}) => {
         <motion.section
             initial={{opacity: 0}}
             animate={ animate ? { opacity: 1 } : { opacity:0 }}
-            transition={{duration: 0.6}}
+            transition={{duration: 0.6, delay: 0.4}}
             className="home-container"
             id="Home"
             >
@@ -19,36 +19,58 @@ const Home: React.FC <AnimateProps>= ({animate}) => {
             {/* Title */}    
             <div className="row title-row d-flex justify-content-center">
                 <div className="col-10">
-                    <h1 className="custom-title">Cuidando la vida</h1>
-                    <h2 className="custom-subtitle">Liderando el camino</h2>
-                    <h2 className="custom-subtitle">hacia la salud</h2>
+                    <motion.h1
+                        initial={{y: -10, opacity: 0}}
+                        animate={{y: 0, opacity: 1}}
+                        transition={{duration: 0.8, delay: 1}}
+                        className="custom-title">
+                            Cuidando la vida
+                    </motion.h1>
+                    <motion.h2 
+                        initial={{x: 10, opacity: 0}}
+                        animate={{x: 0, opacity: 1}}
+                        transition={{duration: 0.8, delay: 1}}
+                        className="custom-subtitle">
+                            Liderando el camino
+                    </motion.h2>
+                    <motion.h2
+                        initial={{x: 10, opacity: 0}}
+                        animate={{x: 0, opacity: 1}}
+                        transition={{duration: 0.8, delay: 1}}
+                        className="custom-subtitle">
+                            hacia la salud
+                    </motion.h2>
                 </div>
             </div>
 
             <img src={imageHome} className="img-fluid w-100 home-image d-none d-md-block" alt="Home Image"/>
-            <img src={imageHomeMovile} className="img-fluid home-image d-block d-md-none" alt="Home Image"/>
+            <img src={imageHomeMovile} className="w-100 home-image d-block d-md-none" alt="Home Image"/>
             
             {/* Buttons */}
-            <div className="row buttons-row d-fex justify-content-center text-center mb-5 mb-lg-0">
-                <div className="col-12 col-md-4 col-lg-2 mb-4 mb-lg-0">
-                    <button className="button-thirdy">
-                        <FontAwesomeIcon icon={faUserFriends} /> Nosotros
-                    </button>
-                </div>
-                <div className="col-12 col-md-4 col-lg-2 mb-4 mb-lg-0">
-                    <button className="button-primary">
-                        <FontAwesomeIcon icon={faStethoscope} /> Servicios
-                    </button>
-                </div>
-                <div className="col-12 col-md-4 col-lg-2 mb-4 mb-lg-0">
-                    <button className="button-secondary">
-                        <FontAwesomeIcon icon={faPhoneAlt} /> Contácto
-                    </button>
-                </div>
-                <div className="row my-5 d-flex justify-content-center d-none d-md-block">
-                    <ButtonSeeMore/>
-                </div>
-            </div>
+            <motion.div 
+                initial={{opacity: 0}}
+                animate={{opacity: 1}}
+                transition={{duration: 1, delay: 1.4}}
+                className="row buttons-row d-fex justify-content-center text-center mb-5 mb-lg-0">
+                    <div className="col-12 col-md-4 col-lg-2 mb-4 mb-lg-0">
+                        <button className="button-thirdy">
+                            <FontAwesomeIcon icon={faUserFriends} /> Nosotros
+                        </button>
+                    </div>
+                    <div className="col-12 col-md-4 col-lg-2 mb-4 mb-lg-0">
+                        <button className="button-primary">
+                            <FontAwesomeIcon icon={faStethoscope} /> Servicios
+                        </button>
+                    </div>
+                    <div className="col-12 col-md-4 col-lg-2 mb-4 mb-lg-0">
+                        <button className="button-secondary">
+                            <FontAwesomeIcon icon={faPhoneAlt} /> Contácto
+                        </button>
+                    </div>
+                    <div className="row my-5 d-flex justify-content-center d-none d-md-block">
+                        <ButtonSeeMore/>
+                    </div>
+            </motion.div>
 
             
 
