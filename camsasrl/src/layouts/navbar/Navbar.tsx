@@ -34,13 +34,13 @@ const Navbar: React.FC = React.memo(() => {
     
     return (
         <motion.nav 
-            initial={{opacity: !isDesktop ? 1 : 0}}
+            initial={{opacity: 0}}
             animate={{opacity: 1}}
-            transition={{duration: 0.7, delay: 1.2}}
+            transition={{duration: 0.4, delay: 0.8}}
             className={`navbar navbar-expand-lg ${isDesktop && !isMenuOpen ? 'fixed-top fixed-top-desktop bg-white' : ''}`}>
                 <div className="container-fluid">
                 <a href="#Home" className="navbar-brand">
-                    <img src={logoNav} alt="Logo" className="logo-img" />
+                    <img src={logoNav} alt="Logo" className="img-fluid" style={{width: '260px'}}/>
                 </a>
                     <div className={`custom-menu-button d-lg-none ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
                         <div></div>

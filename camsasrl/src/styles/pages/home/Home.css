@@ -1,7 +1,7 @@
 .home-container {
-    margin-top: 88px; /* Ajusta este valor según la altura de tu navbar */
+    margin-top: 92px; /* Ajusta este valor según la altura de tu navbar */
     position: relative;
-    height: calc(100vh - 88px);
+    height: calc(100vh - 92px);
 }
 
 .home-image {
@@ -56,5 +56,24 @@
     .home-container .custom-subtitle {
         font-size: 62px;
     }
+}
+
+@media (max-width: 767px) {
+
+    .home-container {
+        margin-top: 0px;
+    }
     
+    .home-container .custom-title {
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .home-container .custom-subtitle {
+        margin-top: -10px;
+        font-size: 28px;
+        display: flex;
+        justify-content: center;
+    }
 }

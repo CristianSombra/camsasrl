@@ -14,3 +14,17 @@
     background-color: #218838;
     transform: translateY(-5px);
 }
+
+@media (max-width: 992px) {
+    .button-secondary {
+        padding: 22px 40px;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    .button-secondary {
+        padding: 18px 36px;
+        font-size: 20px;
+    }
+}
