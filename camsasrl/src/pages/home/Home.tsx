@@ -12,7 +12,7 @@ const Home: React.FC <AnimateProps>= ({animate}) => {
             initial={{opacity: 0}}
             animate={ animate ? { opacity: 1 } : { opacity:0 }}
             transition={{duration: 0.6, delay: 0.4}}
-            className="home-container"
+            className="home-container mb-5"
             id="Home"
             >
             
@@ -43,8 +43,8 @@ const Home: React.FC <AnimateProps>= ({animate}) => {
                 </div>
             </div>
 
-            <img src={imageHome} className="img-fluid w-100 home-image d-none d-md-block" alt="Home Image"/>
-            <img src={imageHomeMovile} className="w-100 home-image d-block d-md-none" alt="Home Image"/>
+            <img src={imageHome} className="w-100 home-image d-none d-md-block" alt="Home Image"/>
+            <img src={imageHomeMovile} className="w-100 home-image-mobile d-block d-md-none" alt="Home Image"/>
             
             {/* Buttons */}
             <motion.div 

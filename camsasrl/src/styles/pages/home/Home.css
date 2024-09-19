@@ -1,11 +1,19 @@
 .home-container {
-    margin-top: 92px; /* Ajusta este valor según la altura de tu navbar */
+    margin-top: 92px;
     position: relative;
-    height: calc(100vh - 92px);
+    /* height: calc(100vh - 92px); */
+    min-height: 80vh;
 }
 
 .home-image {
-    height: 100vh; 
+    height: 90vh; 
+    object-fit: cover;
+    position: relative;
+    z-index: -1;
+}
+
+.home-image-mobile {
+    height: 90vh; 
     object-fit: cover;
     position: relative;
     z-index: -1;
@@ -13,7 +21,7 @@
 
 .home-container .title-row {
     position: absolute;
-    top: 0; /* Centramos verticalmente */
+    top: 0;
     left: 0;
     right: 0;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)); /* Degradado */
@@ -47,6 +55,11 @@
 
     .home-container {
         margin-top: 0px;
+        height: calc(100vh - 92px);
+    }
+
+    .home-image {
+        height: 94vh;
     }
     
     .home-container .custom-title {
