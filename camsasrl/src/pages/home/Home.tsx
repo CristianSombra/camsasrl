@@ -11,7 +11,7 @@ const Home: React.FC <AnimateProps>= ({animate}) => {
         <motion.section
             initial={{opacity: 0}}
             animate={ animate ? { opacity: 1 } : { opacity:0 }}
-            transition={{duration: 0.6, delay: 0.4}}
+            transition={{duration: 0.4, delay: 0.4}}
             className="home-container mb-5"
             id="Home"
             >
@@ -21,21 +21,21 @@ const Home: React.FC <AnimateProps>= ({animate}) => {
                 <div className="col-10">
                     <motion.h1
                         initial={{y: -10, opacity: 0}}
-                        animate={{y: 0, opacity: 1}}
-                        transition={{duration: 0.8, delay: 1}}
+                        animate={ animate ? {y: 0, opacity: 1} : {y: -10, opacity: 0}}
+                        transition={{duration: 0.6, delay: 0.6}}
                         className="custom-title">
                             Cuidando la vida
                     </motion.h1>
                     <motion.h2 
                         initial={{x: 10, opacity: 0}}
-                        animate={{x: 0, opacity: 1}}
+                        animate={ animate ? {x: 0, opacity: 1} : {x: 10, opacity: 0}}
                         transition={{duration: 0.8, delay: 1}}
                         className="custom-subtitle">
                             Liderando el camino
                     </motion.h2>
                     <motion.h2
                         initial={{x: 10, opacity: 0}}
-                        animate={{x: 0, opacity: 1}}
+                        animate={ animate ? {x: 0, opacity: 1} : {x: 10, opacity: 0}}
                         transition={{duration: 0.8, delay: 1}}
                         className="custom-subtitle">
                             hacia la salud
@@ -52,20 +52,20 @@ const Home: React.FC <AnimateProps>= ({animate}) => {
                 animate={{opacity: 1}}
                 transition={{duration: 1, delay: 1.4}}
                 className="row buttons-row d-fex justify-content-center text-center mb-5 mb-lg-0">
-                    <div className="col-12 col-md-4 col-lg-2 mb-4 mb-lg-0">
-                        <button className="button-thirdy">
+                    <div className="col-12 col-md-4 col-lg-2 mb-5 mb-lg-0">
+                        <a href="#About" className="button-thirdy">
                             <FontAwesomeIcon icon={faUserFriends} /> Nosotros
-                        </button>
+                        </a>
                     </div>
-                    <div className="col-12 col-md-4 col-lg-2 mb-4 mb-lg-0">
-                        <button className="button-primary">
+                    <div className="col-12 col-md-4 col-lg-2 mb-5 mb-lg-0">
+                        <a href="#Services" className="button-primary">
                             <FontAwesomeIcon icon={faStethoscope} /> Servicios
-                        </button>
+                        </a>
                     </div>
-                    <div className="col-12 col-md-4 col-lg-2 mb-4 mb-lg-0">
-                        <button className="button-secondary">
+                    <div className="col-12 col-md-4 col-lg-2 mb-5 mb-lg-0">
+                        <a href="#Contact" className="button-secondary">
                             <FontAwesomeIcon icon={faPhoneAlt} /> Contácto
-                        </button>
+                        </a>
                     </div>
                     <div className="row my-5 d-flex justify-content-center d-none d-md-block">
                         <ButtonSeeMore/>

@@ -8,3 +8,30 @@ body, html {
     width: 100vw;
     overflow-x: hidden;
 }
+
+#Services, #About, #Contact {
+    padding-top: 100px; /* Ajuste según la altura de tu navbar */
+}
+
+h1 {
+    font-size: 18px;
+    color: #7ecbff;
+    font-weight: bold;
+    margin-bottom: -5px;
+}
+
+h2 {
+    font-size: 46px;
+    color: #00415D;
+    font-weight: bold;
+}
+
+.shadow-image {
+    filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.1));
+}
+
+@media (max-width: 768px) {
+    #Services, #About, #Contact {
+        padding-top: 0px; /* Ajuste según la altura de tu navbar */
+    }
+}
