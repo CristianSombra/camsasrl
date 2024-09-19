@@ -55,9 +55,9 @@ const Navbar: React.FC = React.memo(() => {
                     style={{ overflowY: isMenuOpen ? 'hidden' : 'visible' }}
                     >
                         <ul className="navbar-nav ms-auto mb-lg-0">
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <a href="#Home" className="nav-link active d-none d-md-none d-lg-block" onClick={closeMenu} aria-label="Inicio">Inicio</a>
-                            </li>
+                            </li> */}
                             <li className="nav-item">
                                 <a href="#Services" className="nav-link active" onClick={closeMenu} aria-label="Servicios">Servicios</a>
                             </li>
