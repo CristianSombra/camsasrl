@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import { useInView } from "react-intersection-observer";
-import { SpinnerLoader } from "../components";
+import { SpinnerLoader, ScrollToTop } from "../components";
 import { Navbar } from "../layouts";
 import { Home, Services, About, Contact } from "../pages";
 
@@ -34,6 +34,7 @@ const AppRouter: React.FC = () => {
                     <Contact animate={contactInView}/>
                 </Suspense>
             </div>
+            <ScrollToTop/>
         </>
     )
 }

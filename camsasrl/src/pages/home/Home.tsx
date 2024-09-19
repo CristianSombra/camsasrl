@@ -52,21 +52,21 @@ const Home: React.FC <AnimateProps>= ({animate}) => {
                 animate={{opacity: 1}}
                 transition={{duration: 1, delay: 1.4}}
                 className="row buttons-row d-fex justify-content-center text-center mb-5 mb-lg-0">
-                    <div className="col-12 col-md-4 col-lg-2 mb-5 mb-lg-0">
+                    <button className="col-12 col-md-4 col-lg-2 mb-5 mb-lg-0">
                         <a href="#About" className="button-thirdy">
                             <FontAwesomeIcon icon={faUserFriends} /> Nosotros
                         </a>
-                    </div>
-                    <div className="col-12 col-md-4 col-lg-2 mb-5 mb-lg-0">
+                    </button>
+                    <button className="col-12 col-md-4 col-lg-2 mb-5 mb-lg-0">
                         <a href="#Services" className="button-primary">
                             <FontAwesomeIcon icon={faStethoscope} /> Servicios
                         </a>
-                    </div>
-                    <div className="col-12 col-md-4 col-lg-2 mb-5 mb-lg-0">
+                    </button>
+                    <button className="col-12 col-md-4 col-lg-2 mb-5 mb-lg-0">
                         <a href="#Contact" className="button-secondary">
                             <FontAwesomeIcon icon={faPhoneAlt} /> Contácto
                         </a>
-                    </div>
+                    </button>
                     <div className="row my-5 d-flex justify-content-center d-none d-md-block">
                         <ButtonSeeMore/>
                     </div>
