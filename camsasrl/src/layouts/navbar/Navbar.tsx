@@ -1,12 +1,13 @@
 import React, { useEffect, useState} from "react";
 import { motion } from "framer-motion";
-import { logoNav } from "../../assets/images/Images";
+import { logo } from "../../assets/images/Images";
 import "../../styles";
 
 
 const Navbar: React.FC = React.memo(() => {
     const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 992);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -26,6 +27,8 @@ const Navbar: React.FC = React.memo(() => {
         }
     };
 
+
+
     useEffect(() => {
         const handleResize = () => setIsDesktop(window.innerWidth >= 992);
         window.addEventListener('resize', handleResize);
@@ -40,7 +43,7 @@ const Navbar: React.FC = React.memo(() => {
             className={`navbar navbar-expand-lg ${isDesktop && !isMenuOpen ? 'fixed-top fixed-top-desktop bg-white' : ''}`}>
                 <div className="container-fluid">
                 <a href="#Home" className="navbar-brand">
-                    <img src={logoNav} alt="Logo" className="img-fluid" style={{width: '260px'}}/>
+                    <img src={logo} alt="Logo" className="img-fluid" style={{width: '260px'}}/>
                 </a>
                     <div className={`custom-menu-button d-lg-none ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
                         <div></div>
