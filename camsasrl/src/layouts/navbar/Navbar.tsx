@@ -10,7 +10,7 @@ const Navbar: React.FC = React.memo(() => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.4, delay: 0.8 }}
-            className="navbar navbar-light bg-white"
+            className="navbar navbar-light bg-white fixed-top"
         >
             <div className="container-fluid d-flex justify-content-between align-items-center">
                 <div className="navbar-brand">
@@ -27,7 +27,7 @@ const Navbar: React.FC = React.memo(() => {
                         <a href="#Contact" className="nav-link" aria-label="Contacto">Contacto</a>
                     </li>
                 </ul>
-                <div className="ms-3 me-1 me-lg-4">
+                <div className="ms-lg-3 me-1 me-lg-4">
                     <FontAwesomeIcon icon={faWhatsapp} size="3x" />
                 </div>
             </div>

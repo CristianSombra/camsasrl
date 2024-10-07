@@ -10,7 +10,7 @@ body, html {
 }
 
 #Services, #About, #Contact {
-    padding-top: 30px; /* Ajuste según la altura de tu navbar */
+    padding-top: 90px; /* Ajuste según la altura de tu navbar */
 }
 
 h1 {
@@ -32,6 +32,6 @@ h2 {
 
 @media (max-width: 768px) {
     #Services, #About, #Contact {
-        padding-top: 0px; /* Ajuste según la altura de tu navbar */
+        padding-top: 25px; /* Ajuste según la altura de tu navbar */
     }
 }
