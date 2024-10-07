@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { logo } from "../../assets/images/Images";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
