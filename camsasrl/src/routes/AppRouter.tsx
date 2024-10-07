@@ -13,7 +13,7 @@ const AppRouter: React.FC = () => {
 
     return (    
         <>
-            <Navbar/>
+            {!homeInView && <Navbar/>}
             <div ref={homeRef}>
                 <Suspense fallback={<SpinnerLoader/>}>
                     <Home animate={homeInView}/>
