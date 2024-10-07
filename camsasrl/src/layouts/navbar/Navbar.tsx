@@ -1,81 +1,38 @@
-import React, { useEffect, useState} from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { logo } from "../../assets/images/Images";
-import "../../styles";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 const Navbar: React.FC = React.memo(() => {
-    const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 992);
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-    
-
-    const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen);
-    };
-
-    const closeMenu = (event: React.MouseEvent<HTMLAnchorElement>) => {
-        event.preventDefault();
-        const href = event.currentTarget.getAttribute("href");
-        if(href) {
-            const target = document.querySelector(href);
-            if(target) {
-                setIsMenuOpen(false);
-                setTimeout(() => {
-                    target.scrollIntoView({behavior: "smooth"});
-                }, 20)
-            }
-        }
-    };
-
-
-
-    useEffect(() => {
-        const handleResize = () => setIsDesktop(window.innerWidth >= 992);
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
-    
     return (
-        <motion.nav 
-            initial={{opacity: 0}}
-            animate={{opacity: 1}}
-            transition={{duration: 0.4, delay: 0.8}}
-            className={`navbar navbar-expand-lg ${isDesktop && !isMenuOpen ? 'fixed-top fixed-top-desktop bg-white' : ''}`}>
-                <div className="container-fluid">
-                <a href="#Home" className="navbar-brand">
-                    <img src={logo} alt="Logo" className="img-fluid" style={{width: '260px'}}/>
-                </a>
-                    <div className={`custom-menu-button d-lg-none ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                <motion.div 
-                    initial={{ height: 0 }}
-                    animate={{ height: isMenuOpen ? 'auto' : 0 }}
-                    transition={{ duration: 0.5, ease: "easeInOut" }}
-                    className={`collapse navbar-collapse justify-content-center text-center ${isMenuOpen ? 'show' : ''}`}
-                    style={{ overflowY: isMenuOpen ? 'hidden' : 'visible' }}
-                    >
-                        <ul className="navbar-nav ms-auto mb-lg-0">
-                            {/* <li className="nav-item">
-                                <a href="#Home" className="nav-link active d-none d-md-none d-lg-block" onClick={closeMenu} aria-label="Inicio">Inicio</a>
-                            </li> */}
-                            <li className="nav-item">
-                                <a href="#Services" className="nav-link active" onClick={closeMenu} aria-label="Servicios">Servicios</a>
-                            </li>
-                            <li className="nav-item">
-                                <a href="#About" className="nav-link active" onClick={closeMenu} aria-label="Nosotros">Nosotros</a>
-                            </li>
-                            <li className="nav-item">
-                                <a href="#Contact" className="nav-link active" onClick={closeMenu} aria-label="Contacto">Contacto</a>
-                            </li>
-                        </ul>
-                </motion.div>
+        <motion.nav
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.4, delay: 0.8 }}
+            className="navbar navbar-light bg-white"
+        >
+            <div className="container-fluid d-flex justify-content-between align-items-center">
+                <div className="navbar-brand">
+                    <img src={logo} alt="Logo" className="img-fluid" style={{ width: '260px' }} />
+                </div>
+                <ul className="navbar-nav d-none d-lg-flex flex-row ms-auto">
+                    <li className="nav-item mx-3">
+                        <a href="#Services" className="nav-link" aria-label="Servicios">Servicios</a>
+                    </li>
+                    <li className="nav-item mx-3">
+                        <a href="#About" className="nav-link" aria-label="Nosotros">Nosotros</a>
+                    </li>
+                    <li className="nav-item mx-3">
+                        <a href="#Contact" className="nav-link" aria-label="Contacto">Contacto</a>
+                    </li>
+                </ul>
+                <div className="ms-3 me-1 me-lg-4">
+                    <FontAwesomeIcon icon={faWhatsapp} size="3x" />
+                </div>
             </div>
         </motion.nav>
     );
-})
-
+});
 
 export default Navbar;
