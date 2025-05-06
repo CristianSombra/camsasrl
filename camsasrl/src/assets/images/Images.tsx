@@ -1,8 +1,8 @@
 export const logoNav = 'https://res.cloudinary.com/dyh8yawnl/image/upload/v1726632243/Logo1-removebg-preview_dq90r8.png';
 
 {/* Home */}
-export const imageHome = 'https://res.cloudinary.com/dyh8yawnl/image/upload/v1726525518/Home_nfkll8.webp';
-export const imageHomeMovile = 'https://res.cloudinary.com/dyh8yawnl/image/upload/v1726634575/Home_Mobile_vjtagq.webp';
+export const imageHome = 'https://res.cloudinary.com/cristiansombra/image/upload/v1746574149/CAMSA%20SRL/HOME/desktop_msdcxq.webp';
+export const imageHomeMovile = 'https://res.cloudinary.com/cristiansombra/image/upload/v1746574149/CAMSA%20SRL/HOME/movile_bfazes.webp';
 
 {/* Services */}
 export const firstSection = 'https://res.cloudinary.com/dyh8yawnl/image/upload/v1726718673/services.1_imukoy.webp';
