@@ -24,7 +24,7 @@ const Home: React.FC <AnimateProps>= ({animate}) => {
             animate={ animate ? { opacity: 1 } : { opacity:0 }}
             transition={{duration: 0.4, delay: 0.4}}
             id="Home"
-            className="home-container mb-5"
+            className="home-container"
 
             >
             {/* Title */}    
@@ -38,15 +38,15 @@ const Home: React.FC <AnimateProps>= ({animate}) => {
                             Cuidando la vida
                     </motion.h1>
                     <motion.h2 
-                        initial={{x: 10, opacity: 0}}
-                        animate={ animate ? {x: 0, opacity: 1} : {x: 10, opacity: 0}}
+                        initial={{x: 10, opacity: 0, filter: "blur(8px)"}}
+                        animate={ animate ? {x: 0, opacity: 1, filter: "blur(0px)"} : {x: 10, opacity: 0, filter: "blur(8px)"}}
                         transition={{duration: 0.8, delay: 1}}
                         className="custom-subtitle">
                             Liderando el camino
                     </motion.h2>
                     <motion.h2
-                        initial={{x: 10, opacity: 0}}
-                        animate={ animate ? {x: 0, opacity: 1} : {x: 10, opacity: 0}}
+                        initial={{x: 10, opacity: 0, filter: "blur(8px)"}}
+                        animate={ animate ? {x: 0, opacity: 1, filter: "blur(0px)"} : {x: 10, opacity: 0, filter: "blur(8px)"}}
                         transition={{duration: 0.8, delay: 1}}
                         className="custom-subtitle">
                             hacia la salud
