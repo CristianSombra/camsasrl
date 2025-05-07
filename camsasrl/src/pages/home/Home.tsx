@@ -82,7 +82,9 @@ const Home: React.FC <AnimateProps>= ({animate}) => {
                         <ButtonSeeMore/>
                     </div>
             </motion.div>
+            </motion.div>
         </section>
+        
     )
 }
 
