@@ -23,7 +23,9 @@ const Home: React.FC <AnimateProps>= ({animate}) => {
             initial={{opacity: 0}}
             animate={ animate ? { opacity: 1 } : { opacity:0 }}
             transition={{duration: 0.4, delay: 0.4}}
+            id="Home"
             className="home-container mb-5"
+
             >
             {/* Title */}    
             <div className="row title-row d-flex justify-content-center">
@@ -60,7 +62,7 @@ const Home: React.FC <AnimateProps>= ({animate}) => {
                 initial={{opacity: 0}}
                 animate={{opacity: 1}}
                 transition={{duration: 1, delay: 1.4}}
-                className="row buttons-row d-fex justify-content-center text-center mb-5 mb-lg-0">
+                className="row buttons-row d-fex justify-content-center text-center mb-lg-0">
                     <button className="col-12 col-md-4 col-lg-2 mb-5 mb-lg-0">
                         <a href="#About" className="button-thirdy">
                             <FontAwesomeIcon icon={faUserFriends} /> Nosotros
@@ -79,9 +81,6 @@ const Home: React.FC <AnimateProps>= ({animate}) => {
                     <div className="row my-5 d-flex justify-content-center d-none d-md-block">
                         <ButtonSeeMore/>
                     </div>
-            </motion.div>
-
-            
             </motion.div>
         </section>
     )

@@ -9,7 +9,7 @@ const Services: React.FC <AnimateProps>= ({animate}) => {
             initial={{opacity: 0}}
             animate={ animate ? { opacity: 1 } : { opacity:0 }}
             transition={{duration: 0.4, delay: 0.4}}
-            className="container-fluid"
+            className="container-fluid my-lg-5"
             id="Services"
             >
             
@@ -35,11 +35,11 @@ const Services: React.FC <AnimateProps>= ({animate}) => {
 
             {/* First section */}
             <div className="row my-5 d-flex justify-content-center">
-                <div className="col-12 col-md-5 col-lg-4">
+                <div className="col-12 col-md-5 col-lg-4 order-1 order-md-0">
                     <h3>Title here</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus dicta aliquid vitae provident adipisci nesciunt eos laboriosam, nemo inventore praesentium! Laboriosam ipsam quam repudiandae id doloremque labore facere porro temporibus.</p>
                 </div>
-                <div className="col-12 col-md-5 col-lg-4">
+                <div className="col-12 col-md-5 col-lg-4 order-0 order-md-1">
                     <img src={firstSection} className="img-fluid rounded shadow-image" alt="" />
                 </div>
             </div>

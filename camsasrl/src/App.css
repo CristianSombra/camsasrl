@@ -9,9 +9,6 @@ body, html {
     overflow-x: hidden;
 }
 
-#Services, #About, #Contact {
-    padding-top: 90px; /* Ajuste según la altura de tu navbar */
-}
 
 h1 {
     font-size: 16px;
@@ -30,8 +27,3 @@ h2 {
     filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.1));
 }
 
-@media (max-width: 768px) {
-    #Services, #About, #Contact {
-        padding-top: 50px; /* Ajuste según la altura de tu navbar */
-    }
-}
