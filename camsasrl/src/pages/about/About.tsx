@@ -48,7 +48,7 @@ const About: React.FC <AnimateProps>= ({animate}) => {
             </div>
             
             <div className="row d-flex justify-content-center text-center">
-                <div className="col-10 col-md-5 col-lg-3 mt-4">
+                <div className="col-9 col-md-5 col-lg-3 mt-4">
                     <div className="card shadow border-0" style={{width: "16rem"}}>
                             <div className="card-body">
                                 <h5 className="card-title">Card title</h5>
@@ -57,7 +57,7 @@ const About: React.FC <AnimateProps>= ({animate}) => {
                             </div>
                         </div>
                 </div>
-                <div className="col-10 col-md-5 col-lg-3 mt-4">
+                <div className="col-9 col-md-5 col-lg-3 mt-4">
                     <div className="card shadow border-0" style={{width: "16rem"}}>
                             <div className="card-body">
                                 <h5 className="card-title">Card title</h5>
@@ -66,7 +66,7 @@ const About: React.FC <AnimateProps>= ({animate}) => {
                             </div>
                         </div>
                 </div>
-                <div className="col-10 col-md-5 col-lg-3 mt-4">
+                <div className="col-9 col-md-5 col-lg-3 mt-4">
                     <div className="card shadow border-0" style={{width: "16rem"}}>
                             <div className="card-body">
                                 <h5 className="card-title">Card title</h5>
@@ -75,7 +75,7 @@ const About: React.FC <AnimateProps>= ({animate}) => {
                             </div>
                         </div>
                 </div>
-                <div className="col-10 col-md-5 col-lg-3 mt-4">
+                <div className="col-9 col-md-5 col-lg-3 mt-4">
                     <div className="card shadow border-0" style={{width: "16rem"}}>
                         <div className="card-body">
                             <h5 className="card-title">Card title</h5>
