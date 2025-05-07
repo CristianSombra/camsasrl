@@ -1,5 +1,5 @@
 .home-container {
-    margin-top: 96px;
+    margin-top: 98px;
     position: relative;
 }
 
@@ -73,7 +73,7 @@
 @media (max-width: 767px) {
 
     .home-container {
-        margin-top: 94px;
+        margin-top: 82px;
     }
     
     .home-container .custom-title {
