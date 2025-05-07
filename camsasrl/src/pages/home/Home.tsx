@@ -5,17 +5,28 @@ import { AnimateProps, ButtonSeeMore } from "../../components";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserFriends, faStethoscope, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 import "../../styles";
+import { NavbarHome } from "../../layouts";
 
 const Home: React.FC <AnimateProps>= ({animate}) => {
     return(
-        <motion.section
+        <section id="Home">
+            <motion.div
+                initial={{ opacity: 0, y: -100 }}
+                animate={animate ? { opacity: 1, y: 0 } : { opacity: 0, y: -100 }}
+                transition={{ duration: 0.8, delay: 0.6, ease: "easeInOut" }}
+                style={{ position: 'fixed', top: 0, width: '100%', zIndex: 1000 }}
+                >
+                    <NavbarHome/>
+            </motion.div>
+
+            <motion.div
             initial={{opacity: 0}}
             animate={ animate ? { opacity: 1 } : { opacity:0 }}
             transition={{duration: 0.4, delay: 0.4}}
-            className="home-container"
             id="Home"
+            className="home-container mb-5"
+
             >
-            
             {/* Title */}    
             <div className="row title-row d-flex justify-content-center">
                 <div className="col-10">
@@ -71,7 +82,7 @@ const Home: React.FC <AnimateProps>= ({animate}) => {
                         <ButtonSeeMore/>
                     </div>
             </motion.div>
-        </motion.section>
+        </section>
     )
 }
 
