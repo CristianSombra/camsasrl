@@ -1,4 +1,4 @@
-export const logoNav = 'https://res.cloudinary.com/dyh8yawnl/image/upload/v1726632243/Logo1-removebg-preview_dq90r8.png';
+export const logo = 'https://res.cloudinary.com/dyh8yawnl/image/upload/v1726632243/Logo1-removebg-preview_dq90r8.png';
 
 {/* Home */}
 export const imageHome = 'https://res.cloudinary.com/cristiansombra/image/upload/v1746574149/CAMSA%20SRL/HOME/desktop_msdcxq.webp';

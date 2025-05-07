@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
 import { useInView } from "react-intersection-observer";
 import { SpinnerLoader, ScrollToTop } from "../components";
-import { Navbar } from "../layouts";
+import { Navbar, Footer } from "../layouts";
 import { Home, Services, About, Contact } from "../pages";
 
 
@@ -13,7 +13,7 @@ const AppRouter: React.FC = () => {
 
     return (    
         <>
-            <Navbar/>
+            {!homeInView && <Navbar/>}
             <div ref={homeRef}>
                 <Suspense fallback={<SpinnerLoader/>}>
                     <Home animate={homeInView}/>
@@ -35,6 +35,7 @@ const AppRouter: React.FC = () => {
                 </Suspense>
             </div>
             <ScrollToTop/>
+            <Footer/>
         </>
     )
 }

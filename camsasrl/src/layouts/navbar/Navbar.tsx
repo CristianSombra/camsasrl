@@ -8,7 +8,6 @@ const Navbar: React.FC = React.memo(() => {
 
 
 
-
   return (
     <motion.nav
       initial={{ opacity: 0 }}
